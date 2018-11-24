@@ -1,6 +1,9 @@
+import * as dotenv from "dotenv";
 import * as request from "superagent";
 
 import MessageImpl from "./MessageImpl";
+
+dotenv.config();
 
 export default class SlackMessage extends MessageImpl {
     public getAttachmentBody = `{
